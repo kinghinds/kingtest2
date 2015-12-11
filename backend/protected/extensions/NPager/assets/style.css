@@ -1,0 +1,19 @@
+
+.grid-view .pager-list,
+.list-view .pager-list
+{
+    margin: 5px 0 0 0;
+    text-align: right;
+}
+
+.grid-view .pager-list select,
+.list-view .pager-list select
+{
+    text-align: right;
+}
+
+.grid-view .pager-list span,
+.list-view .pager-list span
+{
+    margin-left: 0.5em;
+}

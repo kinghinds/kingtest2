@@ -1,0 +1,14 @@
+
+#Options +FollowSymLinks
+IndexIgnore */*
+RewriteEngine On
+
+#RewriteBase /joy-cloud/
+
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_URI} !\.(js|ico|gif|jpg|png|css)$
+
+# otherwise forward it to index.php
+RewriteRule . index.php
